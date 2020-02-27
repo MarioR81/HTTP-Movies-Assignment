@@ -24,6 +24,16 @@ function Movie({ addToSavedList }) {
     history.push(`/update-form/${movie.id}`);
   };
 
+  const handleDelete = e => {
+    e.preventDefault();
+    axios.delete(`http://localhost:5000/api/movies/${movie.id}`)
+    .then(res => {
+      props.setMovie(res.data)
+      history.push('/')
+    })
+    .catch(err => console.log('Error delete axios', err))
+  }
+
   useEffect(() => {
     fetchMovie(match.params.id);
   }, [match.params.id]);
@@ -37,6 +47,7 @@ function Movie({ addToSavedList }) {
       <MovieCard movie={movie} />
 
       <div className='edit-button' onClick={handleUpdate}>Edit/Update</div>
+      <div className='delete-button' onClick={handleDelete}>Delete</div>
       <div className='save-button' onClick={saveMovie}>
         Save
       </div>
