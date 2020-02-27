@@ -29,7 +29,6 @@ function Movie({ addToSavedList, getMovieList }) {
     e.preventDefault();
     axios.delete(`http://localhost:5000/api/movies/${movie.id}`)
     .then(res => {
-      // props.setMovie(res.data)
       getMovieList();
       history.push('/')
     })

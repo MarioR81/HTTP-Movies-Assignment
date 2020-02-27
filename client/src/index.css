@@ -59,16 +59,23 @@ body {
   right: 25px;
   border: 1px solid grey;
   padding: 5px 10px;
-  background-color: lightseagreen;
+  background-color: lightgray;
 }
 .save-button:hover {
-  background-color: green;
+  background-color: darkgray;
   color: white;
 }
 
 .home-button {
   padding: 5px 10px;
   background-color: lightskyblue;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: lightgray;
+}
+.home-button:hover {
+  background-color: darkgray;
+  color: white;
 }
 
 .edit-button {
@@ -77,10 +84,10 @@ body {
   right: 25px;
   border: 1px solid grey;
   padding: 5px 10px;
-  background-color: lightseagreen;
+  background-color: lightgray;
 }
 .edit-button:hover {
-  background-color: green;
+  background-color: darkgray;
   color: white;
 }
 
@@ -90,10 +97,10 @@ body {
   right: 25px;
   border: 1px solid grey;
   padding: 5px 10px;
-  background-color: lightseagreen;
+  background-color: lightgrey;
 }
 .delete-button:hover {
-  background-color: green;
+  background-color: darkgray;
   color: white;
 }
 
