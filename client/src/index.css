@@ -59,19 +59,67 @@ body {
   right: 25px;
   border: 1px solid grey;
   padding: 5px 10px;
-  background-color: lightseagreen;
+  background-color: lightgray;
 }
 .save-button:hover {
-  background-color: green;
+  background-color: darkgray;
   color: white;
 }
 
 .home-button {
   padding: 5px 10px;
   background-color: lightskyblue;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: lightgray;
+}
+.home-button:hover {
+  background-color: darkgray;
+  color: white;
+}
+
+.edit-button {
+  position: absolute;
+  top: 60px;
+  right: 25px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: lightgray;
+}
+.edit-button:hover {
+  background-color: darkgray;
+  color: white;
+}
+
+.delete-button {
+  position: absolute;
+  top: 95px;
+  right: 25px;
+  border: 1px solid grey;
+  padding: 5px 10px;
+  background-color: lightgrey;
+}
+.delete-button:hover {
+  background-color: darkgray;
+  color: white;
 }
 
 .movie-warning {
   color: red;
   text-align: center;
+}
+
+.update-card {
+  background-color: #fff;
+  border: 0;
+  box-shadow: 0 -1px 0 #e0e0e0, 0 0 2px rgba(0, 0, 0, 0.12),
+    0 2px 4px rgba(0, 0, 0, 0.24);
+  padding: 1rem;
+  cursor: pointer;
+  position: relative;
+  margin: 1rem auto;
+  align-items: center;
+  text-align: center;
+  width: 50%;
+  height: 350px;
 }
